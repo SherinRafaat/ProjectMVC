@@ -19,11 +19,11 @@ namespace ProjectMVC.Models
 		public DbSet<ApplyForJob> ApplyForJobs { get; set; }
 		public DbSet<Feedback> Feedbacks { get; set; }
 
- 		//protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-		//{
-		//	optionsBuilder.
-		//   UseSqlServer("Data Source=NOUR;Initial Catalog=ProjectMVC;Integrated Security=True;Trust Server Certificate = False;Encrypt = False;");
-		//}
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		{
+			optionsBuilder.
+		   UseSqlServer("Data Source=.;Initial Catalog=ProjectMVC;Integrated Security=True;Trust Server Certificate = False;Encrypt = False;");
+		}
 
 
 
